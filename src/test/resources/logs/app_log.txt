@@ -1,0 +1,7 @@
+INFO    2025-07-16 16:21:56,861 [main] base.BaseTest  - Starting test suite setup...
+INFO    2025-07-16 16:21:56,861 [main] base.BaseTest  - Config Properties Loaded!
+INFO    2025-07-16 16:21:56,873 [main] base.BaseTest  - Initializing browser: chrome
+INFO    2025-07-16 16:21:57,826 [main] base.BaseTest  - Chrome Browser Launched
+INFO    2025-07-16 16:21:57,826 [main] base.BaseTest  - Navigating to URL: https://www.carwale.com/
+INFO    2025-07-16 16:22:07,340 [main] base.BaseTest  - Database connection established!
+INFO    2025-07-16 16:22:14,039 [main] base.BaseTest  - Test Execution Completed !!! 

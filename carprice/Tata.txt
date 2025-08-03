@@ -1,0 +1,15 @@
+Tata car brand name and price
+Tata Nexon price is +Rs. 8.00 Lakh
+Tata Punch price is +Rs. 6.20 Lakh
+Tata Altroz price is +Rs. 6.89 Lakh
+Tata Harrier EV price is +Rs. 21.49 Lakh
+Tata Tiago price is +Rs. 5.00 Lakh
+Tata Curvv price is +Rs. 10.00 Lakh
+Tata Harrier price is +Rs. 15.00 Lakh
+Tata Safari price is +Rs. 15.50 Lakh
+Tata Nexon EV price is +Rs. 12.49 Lakh
+Tata Tiago EV price is +Rs. 7.99 Lakh
+Tata Punch EV price is +Rs. 9.99 Lakh
+Tata Tigor price is +Rs. 6.00 Lakh
+Tata Curvv EV price is +Rs. 17.49 Lakh
+Tata Tigor EV price is +Rs. 7.30 Lakh
