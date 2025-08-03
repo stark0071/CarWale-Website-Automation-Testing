@@ -1,0 +1,166 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.automation</groupId>
+  <artifactId>PageObjectModelWithPageFactory</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  
+   <dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.30</version> <!-- Use latest -->
+  <scope>provided</scope>
+</dependency>
+
+
+    <!-- ✅ Latest TestNG -->
+   <dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>7.9.0</version> <!-- Latest stable as of mid-2025 -->
+  <scope>test</scope>
+</dependency>
+
+
+    <!-- ✅ Latest Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.21.0</version>
+    </dependency>
+
+    <!-- ✅ WebDriverManager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.7.0</version> <!-- Updated to match Selenium 4.x -->
+    </dependency>
+
+    <!-- ✅ ExtentReports -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.8</version>
+    </dependency>
+
+    <!-- ❌ Deprecated: ReportNG (Not recommended with TestNG 7+) -->
+    <!-- Consider removing unless mandatory -->
+    <dependency>
+      <groupId>org.uncommons</groupId>
+      <artifactId>reportng</artifactId>
+      <version>1.1.4</version>
+    </dependency>
+
+    <!-- ✅ Guice for dependency injection -->
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>4.2.3</version>
+    </dependency>
+
+ <dependency>
+  <groupId>log4j</groupId>
+  <artifactId>log4j</artifactId>
+  <version>1.2.17</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.20.0</version>
+</dependency>
+
+
+
+
+    <!-- ✅ Java Mail -->
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4.7</version>
+    </dependency>
+
+    <!-- ✅ MySQL Connector -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.25</version>
+    </dependency>
+
+    <!-- Apache POI core for XLS files -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+</dependency>
+
+  <!-- Apache POI for .xlsx -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.3</version>
+</dependency>
+
+<!-- Required XMLBeans library -->
+<dependency>
+    <groupId>org.apache.xmlbeans</groupId>
+    <artifactId>xmlbeans</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+
+    <dependency>
+    <groupId>org.dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>2.1.4</version>
+</dependency>
+
+    <dependency>
+    	<groupId>com.automation</groupId>
+    	<artifactId>ExtentReport</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>com.w2a</groupId>
+    	<artifactId>DataDrivenProject</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-simple</artifactId>
+    <version>1.7.36</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+  <groupId>org.apache.logging.log4j</groupId>
+  <artifactId>log4j-slf4j-impl</artifactId>
+  <version>2.20.0</version>
+</dependency>
+
+  	<dependency>
+  		<groupId>com.selenium</groupId>
+  		<artifactId>Data_Driven</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+   <build>
+    <plugins>
+      <!-- ✅ Surefire plugin for running TestNG tests -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version> <!-- Updated version -->
+        <configuration>
+          <testFailureIgnore>false</testFailureIgnore>
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
